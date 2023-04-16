@@ -5,11 +5,126 @@
     <meta charset = "UTF-8">
     <meta name = "description" content="Notes for meetings">
     <meta name = "author" content="Chi Zhang">
+    <link rel="icon" type="image/jpg" href="/media/skz.jpg">
   </head>
   <body>
-    <h1>CSE110 First Group Meeting</h1>
-    <h2>Brainstorming for group project.</h2>
-    <h2>April 16, 2023</h2>
-    
+    <header>
+      <h1>CSE 110 First Group Meeting</h1>
+      <h2>Brainstorming on group project topic.</h2>
+      <h3>April 14, 2023</h3>
+    </header>
+
+    <nav>
+      <a href="https://canvas.ucsd.edu/courses/44983">CSE 110 Homepage</a>
+    </nav>
+
+    <main>
+      <div>
+        <p> This is a document to <strong>record meeting notes</strong>.</p>
+      </div>
+
+      <p>We'll take track of our <span>meeting</span> progress through updating this document.</p>
+      <hr>
+      <section>
+        <h2>Attendance List</h2>
+        <ul>
+          <li>Chi Zhang</li>
+          <li>Alexander Hamilton</li>
+          <li>Bang Chan</li>
+          <li>Lily M</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Agenda</h2>
+        <p>In this meeting, we're going to <b>meet each other, brainstorm on our group project, and decide on a topic</b>.
+        It's estimated that this meeting will take <i>about 2.5 hours</i>, and we'll record all important content in this document.
+        To find more information about this group project, please visit <a href="https://canvas.ucsd.edu/courses/44983"> CSE 110 course website </a>.</p>
+      </section>
+
+      <section>
+        <h2>Tasks</h2>
+        <h3>Unfinished Tasks</h3>
+        <ol>
+          <li>Self Introduction</li>
+          <li>Name the Group</li>
+        </ol>
+        <h3>New Tasks</h3>
+        <ol>
+          <li>Read Group Project Requirements</li>
+          <li>Brainstorm on Group Project</li>
+          <li>Decide on a Topic</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Comments and Questions</h2>
+        <details>
+          <summary>Task Assure</summary>
+          <p>How to make sure <em>everyone</em> is involved in this group?<br>
+            We want to find our what to do,<br>
+            why it is important,<br>
+            and how to devide up our tasks.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Pictures and Diagrams</h2>
+        <img src="media/members.jpg" alt="Group members' photo" width="500">
+      </section>
+
+      <section>
+        <h2>Video and Audio</h2>
+        <p>This is a audio of our meeting.</p>
+        <audio controls>
+          <source src="media/GodsMenu.mp3" tyoe="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <p>This is a video of our meeting.</p>
+        <video width="320" height="240" controls>
+          <source src="media/concertvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section>
+        <h2>Form</h2>
+        <form>
+          <fieldset>
+            <input type="checkbox" id="tasks_done" name="tasks_done">
+            <label for="tasks_done">Tasks are done.</label><br>
+            <input type="radio" id="choice1" name="wanted" value="c1">
+            <label for="choice1">Choose the first radio.</label><br>
+            <input type="radio" id="choice2" name="wanted" value="c2">
+            <label for="choice2">Choose the second radio.</label><br>
+            <label for="username">Your name:</label>
+            <input type="text" id="username" name="username">
+            <input type="date" id="meetingdate" name="meetingdate"
+              value="2023-04-16"
+              min="2023-01-01" max="2023-12-31"><br>
+            <label for="meetingreview">Please put done your review and comments on this meeting.</label>
+            <textarea id="meetingreview" name="meetingreview" rows="4" cols="50">review here</textarea><br>
+            <label for="meeingtime">Choose a time to meet:</label>
+            <input list="possible_times" id="meeingtime" name="meeingtime">
+            <datalist id="possible_times">
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+            </datalist><br>
+            <label for="role">Choose a role you want:</label>
+            <select name="role">
+              <option value="Developer">Developer</option>
+              <option value="Designer">Designer</option>
+              <option value="Product Manager">Product Manager</option>
+            </select><br>
+            <button type="button">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Author: Chi Zhang</p>
+      <p><a href="chz011@ucsd.edu">chz011@ucsd.edu</a></p>
+    </footer>    
   </body>
 </html>
