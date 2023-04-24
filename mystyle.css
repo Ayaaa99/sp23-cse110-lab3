@@ -1,4 +1,4 @@
-/* Create style for h1 */
+/* Create style for h1, Element selector */
 h1{
     display: block;
     height: auto;
@@ -67,26 +67,27 @@ h2:hover{
     border-color:rgb(151, 184, 250);
 }
 
+/* Pseudo-class Selector */
 button:active{
     background-color: blue;
     color:white;
 }
 
-/* Flex */
-.flexcontainer{
+/* Flex, Combining Two Selectors */
+ul.flexcontainer{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
 }
-.flexchild{
+li.flexchild{
     background-color:rgb(190, 213, 255);
     text-align: left;
     font-weight: 100;
 }
 
-/* Grid */
+/* Grid, Class selector */
 .gridcontainer{
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -112,4 +113,46 @@ button:active{
 /* Font Type */
 div{
     font-family: 'Bruno Ace', cursive;
+}
+
+/* Id */
+#agenda{
+    color: cadetblue;
+}
+
+/* Universal selector */
+*{
+    text-align: left;
+}
+
+/* Attribute Selector */
+a[href*="canvas"]{
+    background-color:aqua;
+    color:cadetblue;
+}
+
+/* Selector List */
+li,
+p{
+    color: blueviolet;
+}
+
+/* Descendant Combinator */
+ul li {
+    list-style-type:circle;
+}
+
+/* Child Combinator */
+fieldset > label{
+    color: cornflowerblue;
+}
+
+/* General sibling combinator */
+audio ~ p {
+    background-color:rgb(249, 209, 194)
+}
+
+/* Adjacent sibling */
+summary+p{
+    background-color:ghostwhite;
 }
