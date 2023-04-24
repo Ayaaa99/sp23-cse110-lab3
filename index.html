@@ -6,12 +6,22 @@
     <meta name = "description" content="Notes for meetings">
     <meta name = "author" content="Chi Zhang">
     <link rel="icon" type="image/jpg" href="/media/skz.jpg">
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+      body{
+        background-color: seashell;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>CSE 110 First Group Project Meeting</h1>
+      <h1 style="color:midnightblue;text-align: center;">CSE 110 First Group Project Meeting</h1>
+      <h3 style="text-align: center;">April 14, 2023</h3>
       <h2>Brainstorming on group project topic.</h2>
-      <h3>April 14, 2023</h3>
+      
     </header>
 
     <nav>
@@ -27,17 +37,17 @@
       <hr>
       <section>
         <h2>Attendance List</h2>
-        <ul>
-          <li>Chi Zhang</li>
-          <li>Alexander Hamilton</li>
-          <li>Bang Chan</li>
-          <li>Lily M</li>
+        <ul class="flexcontainer">
+          <li class="flexchild">Chi Zhang</li>
+          <li class="flexchild">Alexander Hamilton</li>
+          <li class="flexchild">Bang Chan</li>
+          <li class="flexchild">Lily M</li>
         </ul>
       </section>
 
       <section>
         <h2>Agenda</h2>
-        <p>In this meeting, we're going to <b>meet each other, brainstorm on our group project, and decide on a topic</b>.
+        <p id="agenda">In this meeting, we're going to <b>meet each other, brainstorm on our group project, and decide on a topic</b>.
         It's estimated that this meeting will take <i>about 2.5 hours</i>, and we'll record all important content in this document.
         To find more information about this group project, please visit <a href="https://canvas.ucsd.edu/courses/44983"> CSE 110 course website </a>.</p>
       </section>
@@ -45,9 +55,10 @@
       <section>
         <h2>Tasks</h2>
         <h3>Unfinished Tasks</h3>
-        <ol>
-          <li>Self Introduction</li>
-          <li>Name the Group</li>
+        <ol class="gridcontainer">
+          <li class="gridchild">Self Introduction</li>
+          <li class="gridchild">Name the Group</li>
+          <li class="gridchild">Create Meeting Minutes</li>
         </ol>
         <h3>New Tasks</h3>
         <ol>
@@ -75,16 +86,16 @@
 
       <section>
         <h2>Video and Audio</h2>
-        <p>This is a audio of our meeting.</p>
         <audio controls>
           <source src="media/GodsMenu.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
-        <p>This is a video of our meeting.</p>
+        <p>This is a audio of our meeting.</p>
         <video width="320" height="240" controls>
           <source src="media/concertvideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
         </video>
+        <p>This is a video of our meeting.</p>
       </section>
 
       <section>
@@ -117,7 +128,7 @@
               <option value="Designer">Designer</option>
               <option value="Product Manager">Product Manager</option>
             </select><br>
-            <button type="button">Submit</button>
+            <button  type="button">Submit</button>
           </fieldset>
         </form>
       </section>
