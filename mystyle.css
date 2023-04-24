@@ -1,0 +1,115 @@
+/* Create style for h1 */
+h1{
+    display: block;
+    height: auto;
+    width: auto;
+    position: static;
+
+    margin-top: 1cm;
+    margin-bottom: 5mm;
+    margin-left: 0in;
+    margin-right: 0in;
+    padding-top: 0cm;
+    padding-bottom: 0.2cm;
+    padding-left: 0cm;
+    padding-right: 0m;
+
+    text-decoration:underline;
+}
+
+/* Create style for h2 */
+h2{
+    display: block;
+    max-width: 80vw;
+    min-width: 10vw;
+    position: relative;
+
+    margin: 1vh 1vw 1vb 1vi;
+    padding: 10px 20px 10px;
+
+    border-style: solid;
+    border-color:rgb(252, 187, 157);
+    border-width: 0.025in;
+    border-radius: 0.3in;
+
+    color:hsl(18, 100%, 56%);
+    background-color: #ecf2fa;
+
+    text-align:left;
+    text-indent: 5px;
+}
+
+/* Create style for h3 */
+h3{
+    margin:auto;
+    color:rgb(160, 34, 34);
+}
+
+/* Create style for h4 */
+h4{
+    display: none;
+}
+
+/* Create style for p*/
+p{
+    display: block;
+}
+
+/* Create style for span*/
+span{
+    display: inline;
+}
+
+/* Create style for button*/
+h2:hover{
+    color:rgb(112, 98, 244);
+    border-style: solid;
+    border-color:rgb(151, 184, 250);
+}
+
+button:active{
+    background-color: blue;
+    color:white;
+}
+
+/* Flex */
+.flexcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flexchild{
+    background-color:rgb(190, 213, 255);
+    text-align: left;
+    font-weight: 100;
+}
+
+/* Grid */
+.gridcontainer{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 0.1in;
+    justify-items: start;
+}
+.gridchild{
+    background-color: beige;
+}
+
+@media (min-width: 35rem) {
+    div {
+        background-color: gainsboro;
+    }
+}
+
+@media (max-width: 50rem) {
+    div {
+        color: blueviolet;
+    }
+}
+
+/* Font Type */
+div{
+    font-family: 'Bruno Ace', cursive;
+}
